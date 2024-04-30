@@ -1,0 +1,56 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: "Jersey 10", sans-serif;
+}
+
+.title{
+    text-align: center;
+    font-size: 190px;
+    align-items: center;
+}
+
+.container-full{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.board-game{
+    border-collapse: collapse;
+}
+
+.board-game.game-over td.cell {
+    border-color:gray;
+    color: gray;
+}
+
+.board-game td.cell{
+    width: 120px;
+    height: 120px;
+    border: 1px solid white;
+    text-align: center;
+    font-size: 5rem;
+    cursor: pointer;
+    transition:all ease 0.35s;
+}
+
+
+.board-game.game-over td.cell.winning-cell {
+    color: white;
+}
+
+.score-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0px;
+}
+
+.new-game{
+    border: 1px solid white;
+    padding: 12px;
+    text-align: center;
+    cursor: pointer;
+}

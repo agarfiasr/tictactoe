@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gato</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+    <audio id="playerXSound" preload="auto" volume="0.1">
+        <source src="player_sound.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="playerOSound" preload="auto" volume="0.1">
+        <source src="player_sound.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="gameOverSound" preload="auto">
+        <source src="game_over_sound.mp3" type="audio/mpeg">
+    </audio>
+    
+    <audio id="newGameSound" preload="auto">
+        <source src="new_game_sound.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="tieSound" preload="auto">
+        <source src="tie_sound.mp3" type="audio/mpeg">
+    </audio>
+    
+    <script src="script.js" defer></script>
+</head>
+    <header class = title>
+        Tic Tac Toe !
+    </header>
+    <body>
+        <div class="container-full">
+            <table class="board-game">
+                <tr>
+                    <td class="cell" data-index="0"></td>
+                    <td class="cell" data-index="1"></td>
+                    <td class="cell" data-index="2"></td>
+                </tr>
+                <tr>
+                    <td class="cell" data-index="3"></td>
+                    <td class="cell" data-index="4"></td>
+                    <td class="cell" data-index="5"></td>
+                </tr>
+                <tr>
+                    <td class="cell" data-index="6"></td>
+                    <td class="cell" data-index="7"></td>
+                    <td class="cell" data-index="8"></td>
+                </tr>
+                </tr>
+            </table>
+            <div class="score-container">
+                <div class="score-x">Player 1 (X) : <span>0</span> </div>
+                <div class="score-o">Player 2 (O) : <span>0</span> </div>
+            </div>
+
+            <div class="new-game">New game</div>
+        </div>
+    </body>
+</html>
